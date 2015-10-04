@@ -1,5 +1,5 @@
-# SystemJS
-
+# jspm and SystemJS sample project 
+ 
 Sample ES6 JavaScript project setup with jspm, SystemJS, Babel and React.
   
 ## Environment setup 
