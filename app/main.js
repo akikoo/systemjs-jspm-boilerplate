@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 
 class MyComponent extends React.Component {
   render() {
@@ -6,4 +7,4 @@ class MyComponent extends React.Component {
   }
 }
 
-React.render(<MyComponent />, document.getElementById('app'));
+ReactDOM.render(<MyComponent />, document.getElementById('app'));
