@@ -15,7 +15,8 @@
     "directories": {},
     "dependencies": {
       "fetch": "npm:whatwg-fetch@^0.9.0",
-      "react": "npm:react@^0.14.0-alpha3",
+      "react": "npm:react@^0.14.0",
+      "react-dom": "npm:react-dom@^0.14.0",
       "whatwg-fetch": "npm:whatwg-fetch@^0.9.0"
     },
     "devDependencies": {
