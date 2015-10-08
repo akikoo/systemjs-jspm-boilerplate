@@ -20,3 +20,9 @@ There's no server included here, but you can use Python's built in server:
 ```sh
 	$ jspm bundle app/main --inject
 ```
+
+To install packages, run `jspm install <package-name>`. For example, to install React, run this:
+
+```sh
+	$ jspm install npm:react
+```
