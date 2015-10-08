@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "jspm": "^0.15.7"
+    "jspm": "^0.16.12"
   },
   "jspm": {
     "directories": {},
