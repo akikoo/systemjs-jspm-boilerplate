@@ -1,10 +1,14 @@
+'use strict';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class MyComponent extends React.Component {
+import CardComponent from './CardComponent.js';
+
+class MainComponent extends React.Component {
   render() {
-    return <p>Hi!</p>;
+    return <CardComponent title="Card Title" />;
   }
 }
 
-ReactDOM.render(<MyComponent />, document.getElementById('app'));
+ReactDOM.render(<MainComponent />, document.getElementById('app'));
