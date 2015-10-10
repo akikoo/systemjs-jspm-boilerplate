@@ -11,12 +11,6 @@ Sample ES6 JavaScript project setup with jspm, SystemJS, Babel and React.
   $ jspm install
 ```
 
-There's no server included here, but you can use Python's built in server: 
-  
-```sh
-  $ python -m SimpleHTTPServer 8000
-```
-
 ## Development
 
 Start a mini-server (provided by Browsersync):
