@@ -17,6 +17,14 @@ There's no server included here, but you can use Python's built in server:
   $ python -m SimpleHTTPServer 8000
 ```
 
+## Development
+
+Start a mini-server (provided by Browsersync):
+
+```sh
+  $ npm start
+```
+
 ## Bundling 
 
 ### Bundle all the modules (injected, no HTML script tag changes needed)
