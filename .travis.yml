@@ -4,3 +4,5 @@ notifications:
   email: false
 node_js:
   - "4.1.2"
+before_script:
+  - jspm install
