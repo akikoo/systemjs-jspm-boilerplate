@@ -7,8 +7,12 @@
     "start": "./node_modules/.bin/browser-sync start --server --files app/*",
     "test": "./node_modules/.bin/mocha --compilers js:babel/register --recursive ./app/*Test.js"
   },
-  "author": "",
+  "author": "Aki Karkkainen",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/akikoo/systemjs-jspm-boilerplate.git"
+  },
   "devDependencies": {
     "babel": "^5.8.23",
     "browser-sync": "^2.9.10",
@@ -34,5 +38,14 @@
       "babel-runtime": "npm:babel-runtime@^5.8.25",
       "core-js": "npm:core-js@^1.2.1"
     }
-  }
+  },
+  "keywords": [
+    "es6",
+    "jspm",
+    "systemjs",
+    "boilerplate",
+    "babel",
+    "react",
+    "workflow"
+  ]
 }
