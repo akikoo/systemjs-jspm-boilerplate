@@ -4,14 +4,21 @@
   "description": "A sample app in es6 using systemjs, jspm and react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files app/*.*"
+    "start": "./node_modules/.bin/browser-sync start --server --files app/*",
+    "test": "./node_modules/.bin/mocha --compilers js:babel/register --recursive ./app/*Test.js"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "babel": "^5.8.23",
     "browser-sync": "^2.9.10",
-    "jspm": "^0.16.12"
+    "jspm": "^0.16.12",
+    "mocha": "^2.3.3",
+    "react": "^0.14.0",
+    "react-addons-test-utils": "^0.14.0",
+    "sinon": "^1.17.1",
+    "unexpected": "^10.0.1",
+    "unexpected-sinon": "^8.0.0"
   },
   "jspm": {
     "dependencies": {
