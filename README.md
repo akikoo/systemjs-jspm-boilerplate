@@ -19,6 +19,12 @@ Start a mini-server (provided by Browsersync):
   $ npm start
 ```
 
+## Run tests
+
+```sh
+  $ npm test
+```
+
 ## Bundling 
 
 ### Bundle all the modules (injected, no HTML script tag changes needed)
