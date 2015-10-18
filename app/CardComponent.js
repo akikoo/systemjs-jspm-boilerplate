@@ -1,6 +1,6 @@
 'use strict';
 
-// import './CardComponent.css!';
+System.import('./app/CardComponent.css!');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
