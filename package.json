@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/akikoo/systemjs-jspm-boilerplate.git"
+    "url": "git://github.com/akikoo/systemjs-jspm-setup.git"
   },
   "devDependencies": {
     "babel": "^5.8.23",
