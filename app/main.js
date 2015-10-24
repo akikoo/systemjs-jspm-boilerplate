@@ -3,7 +3,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import CardComponent from './CardComponent.js';
+import '../compiled/shared/styles/main.css!';
+
+import CardComponent from './components/Card/CardComponent.js';
 
 class MainComponent extends React.Component {
   render() {
