@@ -4,9 +4,10 @@
   "description": "A sample app in es6 using systemjs, jspm and react",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/browser-sync start --server --files app/* & npm run compile-sass",
+    "start": "./node_modules/.bin/browser-sync start --server --files app/* & npm run compile-sass & npm run watch-sass",
     "test": "./node_modules/.bin/mocha",
-    "compile-sass": "./node_modules/.bin/node-sass --watch --recursive ./app --output ./compiled",
+    "compile-sass": "./node_modules/.bin/node-sass --recursive ./app --output ./compiled",
+    "watch-sass": "./node_modules/.bin/node-sass --watch --recursive ./app --output ./compiled",
     "dev": "jspm unbundle",
     "build": "jspm bundle app/main --inject"
   },
