@@ -6,7 +6,7 @@
   "scripts": {
     "start": "./node_modules/.bin/browser-sync start --server --files app/* & npm run compile-sass",
     "test": "./node_modules/.bin/mocha",
-    "compile-sass": "./node_modules/.bin/node-sass --watch ./app/*.scss --output ./app",
+    "compile-sass": "./node_modules/.bin/node-sass --watch --recursive ./app --output ./compiled",
     "dev": "jspm unbundle",
     "build": "jspm bundle app/main --inject"
   },
