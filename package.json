@@ -1,15 +1,15 @@
 {
-  "name": "systemjs-jspm-es6-react-boilerplate",
+  "name": "systemjs-jspm-es6-react-sass-boilerplate",
   "version": "0.0.1",
-  "description": "A sample app in es6 using systemjs, jspm and react",
+  "description": "A sample app in es6 using systemjs, jspm, react and sass",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/browser-sync start --server --files app/* & npm run compile-sass & npm run watch-sass",
+    "start": "./node_modules/.bin/browser-sync start --server --files src/* & npm run compile-sass & npm run watch-sass",
     "test": "./node_modules/.bin/mocha",
-    "compile-sass": "./node_modules/.bin/node-sass --recursive ./app --output ./compiled",
-    "watch-sass": "./node_modules/.bin/node-sass --watch --recursive ./app --output ./compiled",
+    "compile-sass": "./node_modules/.bin/node-sass --recursive ./src --output ./compiled",
+    "watch-sass": "./node_modules/.bin/node-sass --watch --recursive ./src --output ./compiled",
     "dev": "jspm unbundle",
-    "build": "jspm bundle app/main --inject"
+    "build": "jspm bundle src/main --inject"
   },
   "author": "Aki Karkkainen",
   "license": "MIT",

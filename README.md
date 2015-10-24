@@ -29,7 +29,7 @@ Start a mini-server (provided by Browsersync):
 
 ### Bundle all the modules 
 
-Script is injected (no HTML script tag changes are needed). This runs the following script with node: `jspm bundle app/main --inject`
+Script is injected (no HTML script tag changes are needed). This runs the following script with node: `jspm bundle src/main --inject`
 
 ```sh
   $ npm run build
@@ -40,7 +40,7 @@ Script is injected (no HTML script tag changes are needed). This runs the follow
 HTML script tag changes are needed.
  
 ```sh
-  $ jspm bundle-sfx --minify app/main bundle.min.js
+  $ jspm bundle-sfx --minify src/main bundle.min.js
 ```
 
 ### Move back to separate file mode 
