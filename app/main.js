@@ -3,7 +3,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import '../compiled/shared/styles/main.css!';
+import '../compiled/shared/styles/base.css!';
 
 import CardComponent from './components/Card/CardComponent.js';
 
