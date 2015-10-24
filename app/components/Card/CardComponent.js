@@ -1,9 +1,9 @@
 'use strict';
 
-System.import('./app/CardComponent.css!');
-
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import 'compiled/components/Card/CardComponent.css!';
 
 export default class CardComponent extends React.Component {
   render() {
