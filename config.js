@@ -12,6 +12,7 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
+  separateCSS: false,
 
   map: {
     "babel": "npm:babel-core@5.8.25",
