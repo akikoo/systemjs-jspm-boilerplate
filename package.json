@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/akikoo/systemjs-jspm-setup.git"
+    "url": "git://github.com/akikoo/systemjs-jspm-sass-setup.git"
   },
   "devDependencies": {
     "babel": "^5.8.23",
