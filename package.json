@@ -4,7 +4,7 @@
   "description": "A sample app in es6 using systemjs, jspm, react and sass",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/browser-sync start --server --files ./src/**/*.js, ./compiled/ & npm run compile-sass & npm run watch",
+    "start": "./node_modules/.bin/browser-sync start --server --files ./src/components/**/*.js, ./compiled/**/*.css & npm run compile-sass & npm run watch",
     "test": "echo \"TODO: Fix tests\" && exit 0",
     "compile-sass": "./node_modules/.bin/node-sass --recursive ./src --output ./compiled",
     "dev": "jspm unbundle",
