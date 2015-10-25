@@ -10,9 +10,11 @@
     "dev": "jspm unbundle",
     "build": "jspm bundle src/main --inject",
     "postcss": "./node_modules/.bin/postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" --replace ./compiled/**/*.css",
-    "watch": "npm run watch:sass && npm run watch:css",
+    "watch": "npm run watch:sass && npm run watch:css & npm run watch:js",
     "watch:sass": "./node_modules/.bin/onchange './src/**/*.scss' -- npm run compile-sass",
-    "watch:css": "./node_modules/.bin/onchange './compiled/**/*.css' -- npm run postcss"
+    "watch:css": "./node_modules/.bin/onchange './compiled/**/*.css' -- npm run postcss",
+    "watch:js": "./node_modules/.bin/onchange './src/components/**/*.js' -- npm run lint",
+    "lint": "eslint ./src/components/**/*.js"
   },
   "author": "Aki Karkkainen",
   "license": "MIT",
@@ -24,6 +26,7 @@
     "autoprefixer": "^6.0.3",
     "babel": "^5.8.23",
     "browser-sync": "^2.9.10",
+    "eslint": "^1.7.3",
     "jspm": "^0.16.12",
     "mocha": "^2.3.3",
     "node-sass": "^3.3.3",
