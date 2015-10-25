@@ -13,8 +13,9 @@
     "watch": "npm run watch:sass && npm run watch:css & npm run watch:js",
     "watch:sass": "./node_modules/.bin/onchange './src/**/*.scss' -- npm run compile-sass",
     "watch:css": "./node_modules/.bin/onchange './compiled/**/*.css' -- npm run postcss",
-    "watch:js": "./node_modules/.bin/onchange './src/components/**/*.js' -- npm run lint",
-    "lint": "eslint ./src/components/**/*.js"
+    "watch:js": "./node_modules/.bin/onchange './src/components/**/*.js' -- npm run lint:js",
+    "lint:js": "./node_modules/.bin/eslint ./src/components/**/*.js",
+    "lint:css": "./node_modules/.bin/stylelint ./compiled/**/*.css"
   },
   "author": "Aki Karkkainen",
   "license": "MIT",
@@ -36,6 +37,7 @@
     "react-addons-test-utils": "^0.14.0",
     "react-dom": "^0.14.0",
     "sinon": "^1.17.1",
+    "stylelint": "^2.0.0",
     "systemjs": "^0.19.4",
     "unexpected": "^10.0.1",
     "unexpected-sinon": "^8.0.0"

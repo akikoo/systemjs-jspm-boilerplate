@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "declaration-colon-space-before": [2, "never"],
+    "declaration-colon-space-after": [2, "always"],
+    "indentation": [2, 2]
+  }
+}
