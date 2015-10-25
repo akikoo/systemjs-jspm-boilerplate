@@ -15,7 +15,8 @@
     "watch:css": "./node_modules/.bin/onchange './compiled/**/*.css' -- npm run postcss",
     "watch:js": "./node_modules/.bin/onchange './src/components/**/*.js' -- npm run lint:js",
     "lint:js": "./node_modules/.bin/eslint ./src/components/**/*.js",
-    "lint:css": "./node_modules/.bin/stylelint ./compiled/**/*.css"
+    "lint:css": "./node_modules/.bin/stylelint ./compiled/**/*.css",
+    "jscs": "./node_modules/.bin/jscs ./src/components/**/*.js"
   },
   "author": "Aki Karkkainen",
   "license": "MIT",
@@ -28,6 +29,7 @@
     "babel": "^5.8.23",
     "browser-sync": "^2.9.10",
     "eslint": "^1.7.3",
+    "jscs": "^2.4.0",
     "jspm": "^0.16.12",
     "mocha": "^2.3.3",
     "node-sass": "^3.3.3",

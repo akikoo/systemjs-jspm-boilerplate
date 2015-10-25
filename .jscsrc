@@ -1,0 +1,10 @@
+{
+  "preset": "airbnb",
+  "fileExtensions": [".js"],
+  "requireSemicolons": true,
+  "validateQuoteMarks": null,
+  "disallowSpacesInsideObjectBrackets": all,
+  "excludeFiles": [
+    "**/*Test.js"
+  ]
+}
