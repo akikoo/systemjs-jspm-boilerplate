@@ -4,13 +4,15 @@
   "description": "A sample app in es6 using systemjs, jspm, react and sass",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/browser-sync start --server --files src/* & npm run compile-sass & npm run watch-sass",
+    "start": "./node_modules/.bin/browser-sync start --server --files ./src/**/*.js, ./compiled/ & npm run compile-sass & npm run watch",
     "test": "echo \"TODO: Fix tests\" && exit 0",
     "compile-sass": "./node_modules/.bin/node-sass --recursive ./src --output ./compiled",
-    "watch-sass": "./node_modules/.bin/node-sass --watch --recursive ./src --output ./compiled",
     "dev": "jspm unbundle",
     "build": "jspm bundle src/main --inject",
-    "postcss": "./node_modules/.bin/postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" --replace ./compiled/**/*.css"
+    "postcss": "./node_modules/.bin/postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" --replace ./compiled/**/*.css",
+    "watch": "npm run watch:sass && npm run watch:css",
+    "watch:sass": "./node_modules/.bin/onchange './src/**/*.scss' -- npm run compile-sass",
+    "watch:css": "./node_modules/.bin/onchange './compiled/**/*.css' -- npm run postcss"
   },
   "author": "Aki Karkkainen",
   "license": "MIT",
@@ -25,6 +27,7 @@
     "jspm": "^0.16.12",
     "mocha": "^2.3.3",
     "node-sass": "^3.3.3",
+    "onchange": "^2.0.0",
     "postcss-cli": "^2.3.0",
     "react": "^0.14.0",
     "react-addons-test-utils": "^0.14.0",
