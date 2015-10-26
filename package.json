@@ -41,6 +41,7 @@
     "sinon": "^1.17.1",
     "stylelint": "^2.0.0",
     "systemjs": "^0.19.4",
+    "systemjs-builder": "^0.14.9",
     "unexpected": "^10.0.1",
     "unexpected-sinon": "^8.0.0"
   },
