@@ -27,12 +27,22 @@ Start a mini-server (provided by Browsersync):
 
 ## Bundling 
 
-### Bundle all the modules 
+WIP. Current options documented below.
 
-Script is injected (no HTML script tag changes are needed). This runs the following script with node: `jspm bundle src/main --inject`
+### Using SystemJS Builder
+
+Create minified `dist/main.js` and `dist/main.css` files.
 
 ```sh
-  $ npm run build
+  $ npm run bundle
+```
+
+### Bundle all the modules without using Builder script
+
+Script is injected (no HTML script tag changes are needed).
+
+```sh
+  $ jspm bundle src/main dist/main.js --inject
 ```
 
 ### Create a self-executing, minified bundle 
@@ -40,7 +50,7 @@ Script is injected (no HTML script tag changes are needed). This runs the follow
 HTML script tag changes are needed.
  
 ```sh
-  $ jspm bundle-sfx --minify src/main bundle.min.js
+  $ jspm bundle-sfx --minify src/main dist/main.js
 ```
 
 ### Move back to separate file mode 
