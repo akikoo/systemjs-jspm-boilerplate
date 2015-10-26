@@ -4,11 +4,11 @@
   "description": "A sample app in es6 using systemjs, jspm, react and sass",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/browser-sync start --server --files ./src/components/**/*.js, ./compiled/**/*.css & npm run compile-sass & npm run watch",
+    "start": "mkdir -p dist/ && ./node_modules/.bin/browser-sync start --server --files ./src/components/**/*.js, ./compiled/**/*.css & npm run compile-sass & npm run watch",
     "test": "echo \"TODO: Fix tests\" && exit 0",
     "compile-sass": "./node_modules/.bin/node-sass --recursive ./src --output ./compiled",
     "dev": "jspm unbundle",
-    "bundle": "mkdir -p dist/ && node bundle.js",
+    "bundle": "node bundle.js",
     "postcss": "./node_modules/.bin/postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" --replace ./compiled/**/*.css",
     "watch": "npm run watch:sass && npm run watch:css & npm run watch:js",
     "watch:sass": "./node_modules/.bin/onchange './src/**/*.scss' -- npm run compile-sass",
