@@ -26,24 +26,15 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
-    "babel": "^5.8.23",
     "browser-sync": "^2.9.10",
     "eslint": "^1.7.3",
     "jscs": "^2.4.0",
     "jspm": "^0.16.12",
-    "mocha": "^2.3.3",
     "node-sass": "^3.3.3",
     "onchange": "^2.0.0",
     "postcss-cli": "^2.3.0",
-    "react": "^0.14.0",
-    "react-addons-test-utils": "^0.14.0",
-    "react-dom": "^0.14.0",
-    "sinon": "^1.17.1",
     "stylelint": "^2.0.0",
-    "systemjs": "^0.19.4",
-    "systemjs-builder": "^0.14.9",
-    "unexpected": "^10.0.1",
-    "unexpected-sinon": "^8.0.0"
+    "systemjs-builder": "^0.14.9"
   },
   "jspm": {
     "dependencies": {

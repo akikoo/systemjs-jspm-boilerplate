@@ -1,10 +1,10 @@
-# jspm and SystemJS sample project 
- 
+# jspm and SystemJS sample project
+
 Sample ES6 JavaScript project setup with jspm, SystemJS, Babel and React.
 
 [![Build Status](https://travis-ci.org/akikoo/systemjs-jspm-setup.svg?branch=master)](https://travis-ci.org/akikoo/systemjs-jspm-setup)
 
-## Environment setup 
+## Environment setup
 
 ```sh
   $ npm install
@@ -21,11 +21,14 @@ Start a mini-server (provided by Browsersync):
 
 ## Run tests
 
+N/A until I figure out how to make Mocha work with SystemJS.
+In the meantime, have a look at my React testing demo setup: [https://github.com/akikoo/react-testing](https://github.com/akikoo/react-testing)
+
 ```sh
   $ npm test
 ```
 
-## Bundling 
+## Bundling
 
 WIP. Current options documented below.
 
@@ -45,20 +48,20 @@ Script is injected (no HTML script tag changes are needed).
   $ jspm bundle src/main dist/main.js --inject
 ```
 
-### Create a self-executing, minified bundle 
- 
+### Create a self-executing, minified bundle
+
 HTML script tag changes are needed.
- 
+
 ```sh
   $ jspm bundle-sfx --minify src/main dist/main.js
 ```
 
-### Move back to separate file mode 
+### Move back to separate file mode
 
 Clear out any injected bundle configuration. This runs the following script with node: `jspm unbundle`
 
 ```sh
-  $ npm run dev 
+  $ npm run dev
 ```
 
 To install packages, run `jspm install <package-name>`. For example, to install React, run this:

@@ -1,3 +1,0 @@
-./src/**/*Test.js
---compilers js:babel/register
---reporter nyan
