@@ -1,8 +1,8 @@
 # jspm and SystemJS sample project
 
-Sample ES6 JavaScript project setup with jspm, SystemJS, Babel and React.
+Sample ES6 JavaScript project setup with jspm, SystemJS, Babel, React and Sass.
 
-[![Build Status](https://travis-ci.org/akikoo/systemjs-jspm-setup.svg?branch=master)](https://travis-ci.org/akikoo/systemjs-jspm-setup)
+[![Build Status](https://travis-ci.org/akikoo/systemjs-jspm-sass-setup.svg?branch=master)](https://travis-ci.org/akikoo/systemjs-jspm-sass-setup)
 
 ## Environment setup
 
